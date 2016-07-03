@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>微课堂</title>
+    <!-- Bootstrap -->
+    <link href="../../common/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custome -->
+    <link href="../../common/css/common.css" rel="stylesheet">
+    <link href="../../common/css/jRating.jquery.css" rel="stylesheet">
+    <link href="../css/resource-course.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <div class="video-player" style="height:180px;"> -->
+    <!--   <video src="http://222.68.193.40/fab1.mp4" style="width:100%;height:180px;" controls="controls">
+            您的浏览器不支持 video 标签。
+        </video>
+ -->
+    <iframe src="" class="hide" style="height:180px;width:100%"></iframe>
+    <div id="videoPlay" class="video-player" style="height:180px;">
+        <p class="hide" style="padding-top:100px;padding-left:40%">暂无可播放课件</p>
+    </div>
+
+    <div class="container-fluid">
+
+
+        <div class="row" style="overflow: hidden;">
+            <div id="course-tab-star" class="star-wrap">
+                <!-- <div class="basic clmb-2" data-average="0" data-id="1" style="display:inline-block;"></div> -->
+                <div class="score-star-btn-wrap">
+                    <button id="btn-course-score" class="btn btn-info">确认</button>
+                </div>
+                <div id="starsPanel" class="score-star-pane">
+                    <ul class="stars clearfix list-unstyled">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div id="promptPanel" class="prompt-cont">
+                        <!-- <p class="prompt"><label>您已评分</label></p> -->
+                        <p class="prompt">
+                            <label>点击以评分</label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>1分 很差</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>2分 很差</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>3分 较差</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>4分 较差</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>5分 还行</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>6分 还行</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>7分 推荐</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>8分 推荐</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>9分 力荐</nobr>
+                            </label>
+                        </p>
+                        <p class="prompt" style="display:none;">
+                            <label>
+                                <nobr>10分 力荐</nobr>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="course-tab-button" class="course-tab-wrap clearfix">
+                <a href="javascript:;" target="#course-tab-1" class="pipe active">内容简介</a>
+                <a href="javascript:;" target="#course-tab-2" class="pipe">课件</a>
+                <a href="javascript:;" target="#course-tab-star" class="pipe">评分</a>
+                <a href="javascript:;" target="#course-tab-comment" class="">评论</a>
+            </div>
+        </div>
+
+        <div>
+            <br>
+            <div id="course-tab-1" class="course-tab">
+                <p id="resource-describes" class="">
+                    <!-- 电信业发展的困境；为什么要“去电信化”、“去电信化的大趋势”；“去电信化”的难点；“去电信化的大趋势”；“去电信化”的难点； -->
+                </p>
+                <!--<hr>-->
+                <!--<h5>
+                    <b>相关文档</b>
+                </h5>
+                <ul id="ul-course-doclist" class="list-unstyled ul-course-doclist">
+                     <li>该课程没有相关文档</li> 
+                     <li class="blue">
+                        <span class="glyphicon glyphicon-file"></span><a href="#">LTE无限关键技术</a>
+                    </li>
+                    <li class="blue">
+                        <span class="glyphicon glyphicon-file"></span><a href="#">LTE无限关键技术</a>
+                    </li> 
+                </ul>-->
+                <!--<hr>-->
+                <h5>
+                    <b>相关信息</b>
+                </h5>
+                <dl class="mobile-dt-ver">
+                    <dt>课程学时</dt>
+                    <dd id="resource-duration">
+                        <!-- 130分钟 -->
+                    </dd>
+                    <dt>适用岗位</dt>
+                    <dd id="resource-position">
+                        <!--  <span>全员</span>&nbsp;&nbsp;&nbsp;
+                        <span>根据学习进度计算</span> -->
+                    </dd>
+                    <dt>所属分类</dt>
+                    <dd id="resource-kc">
+                        <!-- <span>移动网络技术</span> -->
+                    </dd>
+                </dl>
+            </div>
+            <div id="course-tab-2" class="course-tab hide row">
+                <!-- <div class="li-tab-courseware  bs-callout bs-active">
+                    <span>1.LET总体技术发展
+                        <span class="pull-right grey">30分钟</span>
+                    </span>
+                </div>
+                <div class="li-tab-courseware bs-middle">
+                    <span>2.LTE无限关键技术
+                        <span class="pull-right grey">60分钟</span>
+                    </span>
+                </div>
+                <div class="li-tab-courseware bs-middle">
+                    <span>3.LTE面临的技术挑战
+                        <span class="pull-right grey">40分钟</span>
+                    </span>
+                </div> -->
+            </div>
+            <br>
+            <div id="course-tab-comment" class="course-tab hide">
+                <div class="commentList">
+
+                </div>
+
+                <div id="btn-replay-doc-more" class="btn-comment-more-wrap hidden">
+                    <a href="javascript:;" class="btn-reply-more">更多</a>
+                </div>
+                <!-- 评论 -->
+                <div class="comment-form-box">
+                    <!--                     <div class="comment-author"></div> -->
+                    <div class="comment-input">
+                        <textarea></textarea>
+                    </div>
+                    <div class="comment-submit-btn">
+                        <button id="btn-reply-doc" class="btn btn-primary" type="button">发布</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="floatMidDiv hidden">
+        <div class="docPageTip"></div>
+    </div>
+    <script src="../../common/js/jquery.min.js"></script>
+    <script src="../../common/js/jquery.cookie.js"></script>
+    <script src="../../common/js/juicer.js"></script>
+    <!-- JavaScript -->
+    <script src="../../common/js/zepto.min.js"></script>
+    <script src="../../common/js/zepto.detect.js"></script>
+    <script src="../../common/js/zepto.fx.js"></script>
+    <!-- custom -->
+    <script src="../../common/js/common.js"></script>
+    <script src="../../common/js/constants.js"></script>
+    <script src="../../common/js/jRating.jquery.js"></script>
+    
+    <script src="../js-data/resource-course-data.js"></script>   
+    <script src="../js-view/resource-course.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/documentReader.css">
+    <link href="../../../common/static/css/jRating.jquery.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../../common/static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <title></title>
+    <script type="text/javascript" src="../js-view/iscroll.js"></script>
+    <script src="../../../common/static/js/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <span class="pageno ui-btn">
+        <span id="nowpage">0</span>/
+        <span id="docPage">0</span>
+    </span>
+    <div class="previewCont">
+        <div id="wrapper" class="reflowContent">
+            <div id="scroller">
+                <div class="mainContent" id="docinReader">
+                    <img id="docinDoc1">
+                </div>
+                <div class="hotSpots">
+                    <div id="mobile_left_hotspot" class="hotspot"></div>
+                    <div id="mobile_right_hotspot" class="hotspot"></div>
+                </div>
+            </div>
+
+            <a id="tabSwitch" href="javascript:;" class="fullscreen-button"></a>
+            <div id="l" class="l">
+                <canvas class="sonic"></canvas>
+            </div>
+        </div>
+        <span class="nopage" id="nopre">已翻至第一页</span>
+        <span class="nopage" id="nonext">已翻至最后一页</span>
+    </div>
+
+
+    <div class=" doc-extend-bar hidden" id="docinReaderTool">
+        <div class="btn-doc-action" id="prePage"><i class="icon-arrow-left icon-2 grey"></i>
+            <span class="block">第一页</span>
+        </div>
+        <div class="btn-doc-action"><i class=" icon-star icon-2"></i>
+            <span id="span-resource-score" class="block"></span>
+            </a>
+        </div>
+        <div class="btn-doc-action"><i class="icon-user icon-2"></i>
+            <span id="span-study-count" class="block"></span>
+            </a>
+        </div>
+        <div class="btn-doc-action" id="nextPage"><i class="icon-arrow-right icon-2"></i>
+            <span class="block">下一页</span>
+        </div>
+    </div>
+    <div class="docinMask" id="loadingMask"></div>
+
+
+
+    <div class="relateDoc doc-tab-wrap">
+        <div class="doc-tab-nav">
+            <span class="nav-item selected" data-target="#doc-tab-introduction">简 介</span>
+            <span class="nav-item" data-target="#doc-tab-comment">评 论</span>
+        </div>
+
+        <div class="doc-tab-body">
+            <div id="doc-tab-introduction">
+                <div id="document-tab-introduction">
+                    <div class="fpr text-center document-relative-box">
+                        <!-- <div class="basic clmb-2" data-average="0" data-id="1" style="display:inline-block;"></div> -->
+                        <div class="score-star-btn-wrap">
+                            <button id="btn-course-score" class="btn btn-info">确认</button>
+                        </div>
+                        <div id="starsPanel" class="score-star-pane">
+                            <ul class="stars clearfix list-unstyled">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div id="promptPanel" class="prompt-cont">
+                                <!-- <p class="prompt"><label>您已评分</label></p> -->
+                                <p class="prompt">
+                                    <label>点击以评分</label>
+                                </p>
+                                <p class="prompt" style="display:none;">
+                                    <label>1分 很差</label>
+                                </p>
+                                <p class="prompt" style="display:none;">
+                                    <label>2分 较差</label>
+                                </p>
+                                <p class="prompt" style="display:none;">
+                                    <label>3分 还行</label>
+                                </p>
+                                <p class="prompt" style="display:none;">
+                                    <label>4分 推荐</label>
+                                </p>
+                                <p class="prompt" style="display:none;">
+                                    <label>5分 力荐</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="document-relative-box">
+                        <h4>简介</h4>
+                        <p class="document-intro">
+                        </p>
+                    </div>
+
+                    <div class="document-relative-box h200">
+                        <h4>相关信息</h4>
+                        <dl class="mobile-dt-ver dl-horizontal">
+                            <dt>适用岗位</dt>
+                            <dd id="resource-position"></dd>
+                            <dt>所属分类</dt>
+                            <dd id="resource-kc"></dd>
+                        </dl>
+                    </div>
+
+                </div>
+            </div>
+            <div id="doc-tab-comment" class="hidden">
+                <div class="commentList">
+
+                </div>
+
+                <div id="btn-replay-doc-more" class="btn-comment-more-wrap hidden">
+                    <a href="javascript:;" class="btn-reply-more">更多</a>
+                </div>
+                <!-- 评论 -->
+                <div class="comment-form-box">
+                    <!--                     <div class="comment-author"></div> -->
+                    <div class="comment-input">
+                        <textarea></textarea>
+                    </div>
+                    <div class="comment-submit-btn">
+                        <button id="btn-reply-doc" class="btn btn-primary" type="button">发布</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 文档上次浏览记录 -->
+    <div class="floatBottomDiv hidden">
+        <div class="docPageTip">您上次浏览到第<span id="docRecords"></span>页</div>
+    </div>
+
+    <!-- 文档提示语弹窗 -->
+    <div class="floatMidDiv hidden">
+        <div class="docPageTip"></div>
+    </div>
+
+    <script src="../../../common/static/js/jquery.cookie.js"></script>
+    <script src="../../../common/static/js/juicer.js"></script>
+    <script src="../../../common/static/js/zepto.min.js"></script>
+    <script src="../../../common/static/js/zepto.detect.js"></script>
+    <script src="../../../common/static/js/zepto.fx.js"></script>
+    <script src="../../../common/static/js/common.js"></script>
+    <script src="../../../common/static/js/constants.js"></script>
+    <script type="text/javascript" src="../../../common/static/js/sonic.js"></script>
+
+    <script type="text/javascript" src="../js-view/resource-doc.js"></script>
+    <script type="text/javascript" src="../js-data/resource-doc-data.js"></script>
+    <script type="text/javascript" src="../../../common/static/js-data/iphoneReader.js"></script>
+
+
+</body>
+
+</html>

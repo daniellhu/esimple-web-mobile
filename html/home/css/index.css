@@ -1,0 +1,35 @@
+.services-section-grid,
+.services-section-grid.lost {
+    background: url(../img/ser-bg.png)no-repeat 0px 0px;
+    padding: 0;
+}
+
+.services-section-grid.lost {
+    margin: 0;
+}
+
+.nav_right > li{
+	  width: 90px;
+	  font-size: 12px;
+}
+
+.nav_right li{
+  width: 90px;
+}
+
+/*.nav_right li a {
+	display: block;
+	padding: 23px 5px;
+	color: #3f5348;
+	font-size: 1.1em;
+	text-transform: capitalize;
+	font-weight: 300;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	text-decoration: none;
+	border-top: 4px solid #fff;
+}*/
+ 

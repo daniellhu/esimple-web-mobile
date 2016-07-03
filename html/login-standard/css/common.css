@@ -1,0 +1,123 @@
+/* common */
+body { background: #FFF; text-rendering: optimizelegibility; }
+body, input, button, select, textarea { font: 14px/1.5 'Helvetica Neue','Segoe UI',Tahoma,'Hiragino Sans GB','Hiragino Kaku Gothic Pro','Microsoft YaHei',sans-serif; color: #444; }
+html, body { height: 100%; }
+
+
+/* custom css */
+.vm, .vm * { vertical-align: middle; }
+
+.xs4 { font-size: 14px; }
+.xs5 { font-size: 15px; }
+.xs6 { font-size: 16px; }
+
+.clmt { margin-top: 0 !important; }
+.clmr { margin-right: 0 !important; }
+.clmb { margin-bottom: 0 !important; }
+.clml { margin-left: 0 !important; }
+
+.mln { margin-left: 5px; }
+.mlm { margin-left: 10px; }
+.mlw { margin-left: 20px; }
+
+.mrn { margin-right: 5px; }
+.mrm { margin-right: 10px; }
+.mrw { margin-right: 20px; }
+
+.mbn { margin-bottom: 5px; }
+.mbm { margin-bottom: 10px; }
+.mbw { margin-bottom: 20px; }
+
+.mtn { margin-top: 5px; }
+.mtm { margin-top: 10px; }
+.mtw { margin-top: 20px; }
+
+.clpt { padding-top: 0 !important; }
+.clpr { padding-right: 0 !important; }
+.clpb { padding-bottom: 0 !important; }
+.clpl { padding-left: 0 !important; }
+
+/*.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }*/
+.text-300 { font-weight: 300; }
+.text-700 { font-weight: 700; }
+
+.text-gray { color: #aeaeae;  }
+
+.inline-block { display: inline-block; *display: inline; *zoom: 1; }
+.pipe { margin: 0 5px; color: #ccc; }
+.require { color: #f00; }
+.help { color: #a94442; }
+.one-line { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+hr.line { height: 1px; border: none; background: #E6E7E1; color: #E6E7E1; }
+hr.dotted { border-top: 1px dotted #ccc; }
+
+input[type=file] { font-size: 13px; }
+
+.hide2 { display: none; }
+
+.atip { cursor: pointer; }
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer { text-align: center; color: #aeaeae; height: 60px; line-height: 60px; }
+
+/* module */
+.container { max-width: none !important; width: 970px; }
+
+/* Header */
+.nav-crumb { display: inline-block; background: url(../../common/img/icon-home.png) no-repeat scroll 0 50% transparent; line-height: 32px; text-align: left; text-indent: 24px; }
+  .nav-crumb a { font-size: 12px; color: #333; }
+
+.nav-list { margin-top: 28px; }
+.nav-list a { font-size: 12px; color: #333; line-height: 32px; }
+
+.navbar-brand, .navbar-nav>li>a { text-shadow: 0 1px 0 rgba(0,0,0,.25); }
+.navbar-blue { /*background-image: url(../../common/img/navbar-bg.jpg);*/ background-color: #3276b1; }
+.navbar-blue .navbar-brand { color: #e0f0f7; }
+.navbar-blue .navbar-brand:hover { color: #e0f0f7; }
+.navbar-blue .navbar-nav>li>a { color: #e0f0f7; font-weight: 700; }
+.navbar-blue .navbar-nav>li>a:hover, 
+.navbar-blue .navbar-nav>li>a:focus { color: #e0f0f7; background-color: #285e8e; }
+.navbar-blue .navbar-nav>.active>a {/* background-image: url(../../common/img/navbar-bg-active.png);*/ color: #e0f0f7; background-color: #285e8e; }
+.navbar-blue .navbar-nav>.active>a:hover,
+.navbar-blue .navbar-nav>.active>a:focus { color: #e0f0f7; background-color: #285e8e; }
+.navbar-collapse { padding: 0; }
+
+
+/* panel + nav-tabs */
+.panel-navtabs { border-top: 0 none; border-top-left-radius: 0; border-top-right-radius: 0; }
+  .panel-navtabs .panel-body  { height: 160px; overflow: auto;  }
+
+
+/****************************** 右侧弹出树 ******************************/
+.right-tree-wp {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1080;
+}
+.right-tree-wp .right-tree-panel {
+    /* width: 260px; */
+    width: 360px;
+    position: absolute;
+    left: auto;
+    top: 30px;
+    right: -270px;
+    z-index: 1090;
+    overflow: auto;
+}

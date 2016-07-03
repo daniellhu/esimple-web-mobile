@@ -1,0 +1,360 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Studeon a Corporate Category Flat Bootstarp responsive Website Template|Portfolio :: w3layouts</title>
+    <link href="../../common/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="../../common/js/jquery.min.js"></script> -->
+    <!-- Custom Theme files -->
+    <link href="../../common/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="网易科技 " />
+    <script type="application/x-javascript">
+    addEventListener("load", function() {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <!--//webfont-->
+    <!--Animation-->
+    <script src="../../common/js/wow.min.js"></script>
+    <link href="../../common/css/animate.css" rel='stylesheet' type='text/css' />
+    <script>
+    new WOW().init();
+    </script>
+    <!--Light-Box-->
+    <script type="text/javascript" src="../../common/js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="../../common/css/swipebox.css">
+    <script src="../../common/js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+    jQuery(function($) {
+        $(".swipebox").swipebox();
+    });
+    </script>
+    <!--End-Light-Box-->
+    <!--Script-for-gallery-Here-->
+    <script type="text/javascript" src="../../common/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        var filterList = {
+
+            init: function() {
+
+                // MixItUp plugin
+                // http://mixitup.io
+                $('#portfoliolist').mixitup({
+                    targetSelector: '.portfolio',
+                    filterSelector: '.filter',
+                    effects: ['fade'],
+                    easing: 'snap',
+                    // call the hover effect
+                    onMixEnd: filterList.hoverEffect()
+                });
+
+            },
+
+            hoverEffect: function() {
+
+                // Simple parallax effect
+                $('#portfoliolist .portfolio').hover(
+                    function() {
+                        $(this).find('.label').stop().animate({
+                            bottom: 0
+                        }, 200, 'easeOutQuad');
+                        $(this).find('img').stop().animate({
+                            top: -30
+                        }, 500, 'easeOutQuad');
+                    },
+                    function() {
+                        $(this).find('.label').stop().animate({
+                            bottom: -40
+                        }, 200, 'easeInQuad');
+                        $(this).find('img').stop().animate({
+                            top: 0
+                        }, 300, 'easeOutQuad');
+                    }
+                );
+
+            }
+
+        };
+
+        // Run the show!
+        filterList.init();
+
+
+    });
+    </script>
+</head>
+
+<body>
+    <!-- header-section-starts -->
+    <div class="header box css3-shadow" id="head" ">
+ 	<div class="container ">
+	  <div class="header-top ">
+	        <div class="logo wow bounceInLeft " data-wow-delay="0.4s ">
+				<a href="index.html "><img src="../../common/img/logo.png " alt=" "/></a>
+			 </div>
+		     <div class="h_menu4 "><!-- start h_menu4 -->
+				<a class="toggleMenu " href="# ">Menu</a>
+				<ul class="nav ">
+					<li class="active "><a class="scroll " href="../../home/page/index.html ">首页</a></li>
+						<li><a href="../..project/page/project.html" class="scroll ">项目展示</a></li>
+						<li><a href="../../solution/page/solution.html">解决方案</a>
+                       <li><a href="feature.html ">服务支持</a>
+                            <ul>
+                                <li><a href="../../service/page/saleSupport.html">售后服务</a></li>
+                                <li><a href="feature.html ">施工标准</a></li>
+                                <li><a href="feature.html ">个性定制</a></li>
+                                <li><a href="feature.html ">空调保养</a></li>
+                                <li><a href="feature.html ">空调延保</a></li>
+                                <li><a href="feature.html ">服务承诺</a></li>
+                            </ul>
+                        </li>
+					<li><a href="../../contact/page/contact.html " class="scroll ">关于我们</a></li>
+					<li><a href="../../news/page/news.html ">新闻动态</a></li>
+
+				</ul>
+				<script type="text/javascript " src="../../common/js/nav.js "></script>
+			</div><!-- end h_menu4 -->
+			<div class="social_icons wow bounceInRight " data-wow-delay="0.4s ">
+					<ul>
+						<li><a href="# "><i class="facebook "></i></a></li>
+						<li><a href="# "><i class="twitter "></i></a></li>
+						<li><a href="# "><i class="rss "></i></a></li>
+						<li><a href="# "><i class="viemo "></i></a></li>
+						<li><a href="# "><i class="youtube "></i></a></li>
+						<li><a href="# "><i class="linkedin "></i></a></li>
+					</ul>
+				</div>
+
+			<div class="clearfix "> </div>
+			
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+
+	<!--start-portfolio-->
+	<div class="container ">
+		<div class="gallery ">
+		<!-- portfolio -->
+			<div class="portfolio-section " id="portfolio ">			
+				<!-- head-section -->
+					<div class="head-section text-center ">
+						<h2>成功案例展示</h2>
+					</div>
+					<!-- /head-section -->
+		<ul id="filters " class="clearfix " wow=" " bouncein"="" data-wow-delay="0.4s">
+        <li class="active"><span class="filter active" data-filter="app card icon logos web">汇总</span></li>
+        <li><span class="filter" data-filter="app">家装</span></li>
+        <li><span class="filter" data-filter="card">办公楼</span></li>
+        <li><span class="filter" data-filter="icon">商场</span></li>
+        <li><span class="filter" data-filter="logos">厂房</span></li>
+        </ul>
+        <div id="portfoliolist">
+            <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s1.jpg" class="swipebox" title="Image Title"> <img src="../img/s1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span> </a>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s2.jpg" class="swipebox" title="Image Title"> <img src="../img/s2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s6.jpg" class="swipebox" title="Image Title"> <img src="../img/s6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s4.jpg" class="swipebox" title="Image Title"> <img src="../img/s4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s5.jpg" class="swipebox" title="Image Title"> <img src="../img/s5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s3.jpg" class="swipebox" title="Image Title"> <img src="../img/s3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s1.jpg" class="swipebox" title="Image Title"> <img src="../img/s1.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s2.jpg" class="swipebox" title="Image Title"> <img src="../img/s2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s6.jpg" class="swipebox" title="Image Title"> <img src="../img/s6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s4.jpg" class="swipebox" title="Image Title"> <img src="../img/s4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s5.jpg" class="swipebox" title="Image Title"> <img src="../img/s5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper grid_box">
+                    <a href="../img/s3.jpg" class="swipebox" title="Image Title"> <img src="../img/s3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    </div>
+    </div>
+    <!--/start-footer-section-->
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
+                <div class="col-md-3 footer-grid">
+                    <h4>About studeon</h4>
+                    <div class="border2"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+                    <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+                </div>
+                <div class="col-md-3 footer-grid tags">
+                    <h4>the tags</h4>
+                    <div class="border2"></div>
+                    <ul class="tag">
+                        <li><a href="#">Awesome</a></li>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">Photography</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Css</a></li>
+                        <li><a href="#">photoshop</a></li>
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Awesome</a></li>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">Photoshop</a></li>
+                        <li><a href="#">Html</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-grid tweet">
+                    <h4>latest tweets</h4>
+                    <div class="border2"></div>
+                    <div class="icon-3-square">
+                        <a href="#"><i class="square-3"></i></a>
+                    </div>
+                    <div class="icon-text">
+                        <p>I like this awesome freebie. Check it out<a href="#"> @http://t.co/9vslJFpW </a></p>
+                        <h5>About 15 mins</h5>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="icon-3-square">
+                        <a href="#"><i class="square-3"></i></a>
+                    </div>
+                    <div class="icon-text">
+                        <p>I like this awesome freebie. Check it out<a href="#"> @http://t.co/9vslJFpW </a></p>
+                        <h5>About 15 mins</h5>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-3 footer-grid flickr">
+                    <h4>flickr feed</h4>
+                    <div class="border2"></div>
+                    <div class="flickr-grids">
+                        <div class="flickr-grid">
+                            <a href="#"><img src="../../common/img/f1.png" alt=" " title="CEO" /></a>
+                        </div>
+                        <div class="flickr-grid">
+                            <a href="#"><img src="../../common/img/f2.png" alt=" " title="GM" /></a>
+                        </div>
+                        <div class="flickr-grid">
+                            <a href="#"><img src="../../common/img/f3.png" alt=" " title="CEO" /></a>
+                        </div>
+                        <div class="clearfix"> </div>
+                        <div class="flickr-grid">
+                            <a href="#"><img src="../../common/img/f4.png" alt=" " title="GM" /></a>
+                        </div>
+                        <div class="flickr-grid">
+                            <a href="#"><img src="../../common/img/f3.png" alt=" " title="CEO" /></a>
+                        </div>
+                        <div class="flickr-grid">
+                            <a href="#"><img src="../../common/img/f2.png" alt=" " title="GM" /></a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--//end-footer-section-->
+    <!--/start-copyright-section-->
+    <div class="copyright">
+        <div class="container">
+            <div class="logo2  wow bounceInLeft" data-wow-delay="0.4s">
+                <a href="index.html"><img src="../../common/img/logo2.png" alt="" / title="logo" /></a>
+            </div>
+            <p class="write  wow bounceInRight" data-wow-delay="0.4s">Copyright &copy; 2015 All rights Reserved | Template by &nbsp;<a href="http://w3layouts.com">W3layouts</a></p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--//end-copyright-section-->
+    <!--start-smoth-scrolling-->
+    <script type="text/javascript" src="../../common/js/move-top.js"></script>
+    <script type="text/javascript" src="../../common/js/easing.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+    </script>
+    <!--start-smoth-scrolling-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        /*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
+
+    });
+    </script>
+    <a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+
+</html>

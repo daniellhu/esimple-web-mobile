@@ -1,0 +1,45 @@
+/**** pullscreen col-12 style dl ****/
+.fullscreen-dl dt {
+	width: 30%;
+	line-height: 32px;
+	margin-top: 10px;
+}
+
+.fullscreen-dl dd>section>label, .fullscreen-dl dd {
+	line-height: 32px;
+	margin: 10px;
+}
+
+.fullscreen-dl dd .initinput input {
+	display: inline-block;
+	/*width: 90px;*/
+	width: 70%;
+	margin: 0px 5px;
+	height: 25px;
+	padding: 5px 8px;
+	line-height: 30px;
+}
+
+.fullscreen-dl input {
+	width: 480px;
+}
+
+.fullscreen-dl dd {
+	margin-left: 35%;
+	width: 10px;
+}
+
+.smart-form .fullscreen-dl .input-file .button {
+	font-size: 10px;
+	padding-top: 2px;
+	background-color: #57889c;
+	border-color: #4e7a8c;
+}
+
+.fullscreen-dl-20 dt {
+	width: 20%;
+}
+
+.fullscreen-dl-20 dd {
+	margin-left: 21%;
+}

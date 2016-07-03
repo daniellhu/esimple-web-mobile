@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>测验</title>
+    <!-- Bootstrap -->
+    <link href="../../../common/static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custome -->
+    <link href="../../../common/static/css/common.css" rel="stylesheet">
+    <link href="../css/resource-test.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- title for scores -->
+    <div class="test-title">
+        <div class="wdp33">总分：
+            <span id="total-score"></span>
+        </div>
+        <div class="wdp33">及格分：
+            <span id="pass-score"></span>
+        </div>
+        <div class="wdp33">成绩：
+            <span class="blue" id="user-score"></span>
+        </div>
+    </div>
+
+    <!-- question area -->
+    <div class="test-question" id="test-question-list">
+        <!-- <div class="question-center active">
+            <h5>1. 你的生肖是什么？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="radio" name="q1" value="1" />
+                    <span>生命在运动</span>
+                </li>
+                <li>
+                    <input type="radio" name="q1" value="2" />
+                    <span>自强不息</span>
+                </li>
+                <li>
+                    <input type="radio" name="q1" value="3" />
+                    <span>我是一只很可爱的猫</span>
+                </li>
+                <li>
+                    <input type="radio" name="q1" value="4" />
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+            </ul>
+        </div> -->
+
+        <!-- <div class="question-center hide">
+            <h5>2. 你猜我会不会问你星座是什么？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="checkbox" name="q2"  value="1"/>
+                    <span>你猜啊你猜啊你猜</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q2" value="2"/>
+                    <span>就不告诉你就不告诉你</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q2" value="3"/>
+                    <span>反正我就是不告诉你</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q2" value="4"/>
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q2" value="5"/>
+                    <span>你是狮子座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q2" value="6"/>
+                    <span>你是白羊座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q2" value="7"/>
+                    <span>你是傻子座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q2" value="8"/>
+                    <span>哈哈哈哈哈哈</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question-center hide">
+            <h5>3. 你是不是还没睡醒啊是不是还没睡醒啊哈哈哈哈哈还没睡醒吧？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="radio" name="q3" />
+                    <span>生命在运动</span>
+                </li>
+                <li>
+                    <input type="radio" name="q3" />
+                    <span>自强不息</span>
+                </li>
+                <li>
+                    <input type="radio" name="q3" />
+                    <span>我是一只很可爱的猫</span>
+                </li>
+                <li>
+                    <input type="radio" name="q3" />
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question-center hide">
+            <h5>4. 你的生肖是什么？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="radio" name="q4" />
+                    <span>生命在运动</span>
+                </li>
+                <li>
+                    <input type="radio" name="q4" />
+                    <span>自强不息</span>
+                </li>
+                <li>
+                    <input type="radio" name="q4" />
+                    <span>我是一只很可爱的猫</span>
+                </li>
+                <li>
+                    <input type="radio" name="q4" />
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question-center hide">
+            <h5>5. 你猜我会不会问你星座是什么？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="checkbox" name="q5" />
+                    <span>你猜啊你猜啊你猜</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q5" />
+                    <span>就不告诉你就不告诉你</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q5" />
+                    <span>反正我就是不告诉你</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q5" />
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q5" />
+                    <span>你是狮子座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q5" />
+                    <span>你是白羊座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q5" />
+                    <span>你是傻子座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q5" />
+                    <span>哈哈哈哈哈哈</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question-center hide">
+            <h5>6. 你是不是还没睡醒啊是不是还没睡醒啊哈哈哈哈哈还没睡醒吧？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="radio" name="q6" />
+                    <span>生命在运动</span>
+                </li>
+                <li>
+                    <input type="radio" name="q61" />
+                    <span>自强不息</span>
+                </li>
+                <li>
+                    <input type="radio" name="q6" />
+                    <span>我是一只很可爱的猫</span>
+                </li>
+                <li>
+                    <input type="radio" name="q6" />
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question-center hide">
+            <h5>7. 你的生肖是什么？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="radio" name="q7" />
+                    <span>生命在运动</span>
+                </li>
+                <li>
+                    <input type="radio" name="q7" />
+                    <span>自强不息</span>
+                </li>
+                <li>
+                    <input type="radio" name="q7" />
+                    <span>我是一只很可爱的猫</span>
+                </li>
+                <li>
+                    <input type="radio" name="q7" />
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question-center hide">
+            <h5>8. 你猜我会不会问你星座是什么？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="checkbox" name="q8" />
+                    <span>你猜啊你猜啊你猜</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q8" />
+                    <span>就不告诉你就不告诉你</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q8" />
+                    <span>反正我就是不告诉你</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q8" />
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q8" />
+                    <span>你是狮子座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q8" />
+                    <span>你是白羊座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q8" />
+                    <span>你是傻子座</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="q8" />
+                    <span>哈哈哈哈哈哈</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question-center hide">
+            <h5>9. 你是不是还没睡醒啊是不是还没睡醒啊哈哈哈哈哈还没睡醒吧？</h5>
+            <ul class="anwer-list list-unstyled">
+                <li>
+                    <input type="radio" name="q9" />
+                    <span>生命在运动</span>
+                </li>
+                <li>
+                    <input type="radio" name="q9" />
+                    <span>自强不息</span>
+                </li>
+                <li>
+                    <input type="radio" name="q9" />
+                    <span>我是一只很可爱的猫</span>
+                </li>
+                <li>
+                    <input type="radio" name="q9" />
+                    <span>嘟嘟嘟嘟嘟</span>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+
+    <!-- tool for questions map change -->
+    <div class="test-question-tool">
+        <div id="numb-prev" class="numb-pre unable">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </div>
+        <div class="numbs">
+        </div>
+        <div id="numb-next" class="numb-next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </div>
+        <div class="test-question-change">
+            <div id="btn-prev" class="qc-btn unable">
+                <span>上一题</span>
+            </div>
+            <div id="btn-next" class="qc-btn btn-next">
+                <span>下一题</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Juicer-->
+    <script src="../../../common/static/js/juicer.js"></script>
+    <!-- JavaScript -->
+    <script src="../../../common/static/js/zepto.min.js"></script>
+    <script src="../../../common/static/js/zepto.touch.js"></script>
+    <script src="../../../common/static/js/iscroll.js"></script>
+    <script src="../../../common/static/js/jquery.min.js"></script>
+    <script src="../../../common/static/js/AlertMessage.js"></script>
+    <!-- custom -->
+    <script src="../../../common/static/js/common.js"></script>
+    <script src="../../../common/static/js/constants.js"></script>
+    <script src="../js-view/resource-test.js"></script>
+    <script src="../js-data/resource-test-data.js"></script>
+</body>
+
+</html>

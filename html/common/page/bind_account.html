@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection"content="telephone=no, email=no" />
+  <title>账号绑定</title>
+  <link href="../css/base.css" rel="stylesheet">
+  <link href="../css/common.css" rel="stylesheet">
+ 
+</head>
+<body>
+
+  <div class="wrap hide2" id="form-bind-account">
+    <div class="form-group">
+      <span class="error vm hide2"><i class="icon-bx"></i><span  id="error-span"></span></span>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="login-name" placeholder="账号">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="login-pwd" placeholder="密码">
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-primary" id="btn-bind-account" >账号绑定</button>
+    </div>
+    <div class="form-group">
+      注意：账号一旦绑定，不允许解绑，请确认。
+    </div>
+    
+  </div>
+  
+  <!-- JavaScript -->
+<script src="../../../common/static/js/jquery.min.js"></script>
+<script src="../../../common/static/js/jquery.cookie.js"></script>
+  
+<script src="../../../common/static/js/zepto.min.js"></script>
+<script src="../../../common/static/js/zepto.touch.js"></script>
+<script src="../../../common/static/js/iscroll.js"></script>
+ 
+  
+<script src="../js/constants.js"></script>
+<script src="../js-data/bind-account.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>esimple-登陆</title>
+
+<link href="../../common/css/style.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../../common/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="../../common/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../../common/css/smartadmin-production.min.css">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../../common/css/smartadmin-skins.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../css/order_management.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="application/x-javascript">
+    addEventListener("load", function() {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    </script>
+<!--webfonts-->
+<!--//webfonts-->
+</head>
+
+<body>
+	<div class="header box css3-shadow" id="head"">
+		<div class="container ">
+			<div class="header-top ">
+				<div class="logo wow bounceInLeft " data-wow-delay="0.4s ">
+					<a href="index.html "><img src="../../common/img/logo.png "
+						alt=" " /></a>
+				</div>
+				<div class="h_menu4 ">
+					<!-- start h_menu4 -->
+					<a class="toggleMenu " href="# ">Menu</a>
+					<ul class="nav ">
+						<li class="active "><a class="scroll "
+							href="../../home/page/index.html ">首页</a></li>
+						<li><a href="../../project/page/project.html "
+							class="scroll ">项目展示</a></li>
+						<li><a href="../../solution/page/solution.html ">解决方案</a>
+						<li><a href="feature.html ">服务支持</a>
+							<ul>
+								<li><a href="feature.html ">售后服务</a></li>
+								<li><a href="feature.html ">施工标准</a></li>
+								<li><a href="feature.html ">个性定制</a></li>
+								<li><a href="feature.html ">空调保养</a></li>
+								<li><a href="feature.html ">空调延保</a></li>
+								<li><a href="feature.html ">服务承诺</a></li>
+							</ul></li>
+						<li><a href="../../contact/page/contact.html ">关于我们</a></li>
+						<li><a href="../../news/page/news.html ">新闻动态</a></li>
+
+					</ul>
+					<script type="text/javascript " src="../../common/js/nav.js "></script>
+
+
+				</div>
+				<!-- end h_menu4 -->
+				<div class="nav_right ">
+					<ul class="nav nav_right ">
+						<li><a href="../../login/page/login.html "><i
+								class="icon-user-md "> </i>登录</a></li>
+						<li><a href=" "><i class=" icon-lightbulb "></i>订单<i
+								class="icon-angle-down "></i></a>
+							<ul>
+								<li><a href="/guide/ ">提交订单</a></li>
+								<li><a href="/guide/order.htm ">订单管理</a></li>
+								<li><a href="/guide/question.htm ">交易记录</a></li>
+								<li><a href="/guide/question.htm ">更改密码</a></li>
+							</ul></li>
+					</ul>
+				</div>
+
+				<!-- <div class="clearfix "> </div> -->
+
+			</div>
+			<!-- end header_main4 -->
+		</div>
+	</div>
+
+
+	<div class="container  ">
+		<div id="content">
+			<div class="row">
+				<div id="widget-grid" class="modal-body ">
+					<div class="jarviswidget" id="wid-course-search-id-1"
+						data-widget-colorbutton="false" data-widget-editbutton="false"
+						data-widget-deletebutton="false"
+						data-widget-fullscreenbutton="false"
+						data-widget-custombutton="false" data-widget-sortable="false"
+						role="widget">
+						<header role="heading">
+							<div class="jarviswidget-ctrls" role="menu">
+								<a href="javascript:void(0);"
+									class="button-icon jarviswidget-toggle-btn" rel="tooltip"
+									title="" data-placement="bottom" data-original-title="Collapse"><i
+									class="fa fa-minus "></i></a>
+							</div>
+							<span class="widget-icon"> <i class="fa fa-search"></i>
+							</span>
+							<h2>搜索订单</h2>
+							<span class="jarviswidget-loader"><i
+								class="fa fa-refresh fa-spin"></i></span>
+						</header>
+
+						<div id="widget-content" role="content">
+							<div class="jarviswidget-editbox"></div>
+
+							<div class="widget-body">
+								<form id="course-search-form" class="smart-form">
+									<fieldset class="pt10">
+										<div class="row">
+											<section class="col col-4">
+												<label class="select"> <select name="role"
+													id="course-type">
+														<option value="" selected="" disabled="">--请选择订单类型--</option>
+														<option value="">全部</option>
+														<option value="SCORM">未付款</option>
+														<option value="VIDEO">已付款</option>
+														<option value="WEB">已完成</option>
+												</select> <i></i>
+												</label>
+											</section>
+
+											<section class="col col-4">
+												<label class="input"> <i
+													class="icon-append fa fa-caret-square-o-down"></i> <input
+													id="input-catalog" type="text" name="" placeholder="订单名称">
+													<input id="input-catalog-id" type="hidden" value="">
+												</label>
+											</section>
+
+											<section class="col col-4">
+												<label class="input"> <i
+													class="icon-prepend fa fa-info-circle"></i> <input
+													type="text" id="course-serialNumber" placeholder="订单编号">
+												</label>
+											</section>
+
+											<section class="col col-4">
+												<label class="input"> <i
+													class="icon-append fa fa-calendar"></i> <input type="text"
+													name="release-date" id="release-date" placeholder="发布开始日期"
+													class="hasDatepicker">
+												</label>
+											</section>
+											<section class="col col-4">
+												<label class="input"> <i
+													class="icon-append fa fa-calendar"></i> <input type="text"
+													name="release-date" id="release-date" placeholder="发布结束日期"
+													class="hasDatepicker">
+												</label>
+											</section>
+											<section class="col col-4">
+												<span id="btn-coursesearch-enter"
+													class="btn btn-info btn-sm pull-right">搜索</span>
+											</section>
+										</div>
+
+									</fieldset>
+								</form>
+							</div>
+							<!-- end widget content -->
+
+						</div>
+						<!-- end widget div -->
+
+					</div>
+
+					<div class="jarviswidget jarviswidget-color mb10"
+						id="wid-course-list-id-2" data-widget-editbutton="false"
+						data-widget-colorbutton="false" data-widget-deletebutton="false"
+						data-widget-fullscreenbutton="false"
+						data-widget-custombutton="false" data-widget-sortable="false"
+						data-widget-togglebutton="false" role="widget">
+						<header role="heading">
+							<span class="widget-icon"> <i class="fa fa-table"></i>
+							</span>
+							<h2>订单列表</h2>
+
+							<span class="jarviswidget-loader"><i
+								class="fa fa-refresh fa-spin"></i></span>
+						</header>
+
+						<!-- widget div-->
+						<div role="content">
+
+							<div class="widget-body no-padding">
+
+								<div class="table-responsive">
+
+									<table id=""
+										class="table table-hover table-bordered smart-form has-tickbox">
+										<thead>
+											<tr>
+												<th style="border-left: 5px solid transparent !important;">
+													<label class="checkbox"> <input type="checkbox"
+														class="chkall" name="checkbox-inline"> <i></i>
+												</label>
+												</th>
+												<th width="">序号</th>
+												<th width="">订单编号</th>
+												<th width="">订单名称</th>
+												<th width="">创建者</th>
+												<th width=""><a href="javascript:;" class="sort"
+													onclick="sort_handle('add-course-list', this)"
+													data-field="timeCreated">发布日期</a></th>
+												<th width="">状态</th>
+												<th width="120">操作</th>
+											</tr>
+										</thead>
+										<tbody id="manage-course-list">
+											<tr>
+												<td style="border-left: 5px solid red !important;"><label
+													class="checkbox"> <input type="checkbox"
+														class="invechk" name="checkbox-inline"> <i></i>
+												</label></td>
+												<td>1</td>
+												<td>WOW32</td>
+												<td>WOW32 XMAS intro-141218</td>
+												<td>周晓俊</td>
+												<td>2015.04.20</td>
+												<td>非公开</td>
+												<td><span class="btn btn-info btn-xs btn-course-edit">编辑</span>
+													<span class="btn btn-default btn-xs btn-course-view">详细</span>
+													<span class="btn btn-default btn-xs btn-course-del">删除</span>
+												</td>
+											</tr>
+											<tr>
+												<td style="border-left: 5px solid green !important;"><label
+													class="checkbox"> <input type="checkbox"
+														class="invechk" name="checkbox-inline"> <i></i>
+												</label></td>
+												<td>2</td>
+												<td>WOW32</td>
+												<td>WOW32 XMAS intro-141218</td>
+												<td>周晓俊</td>
+												<td>2015.04.20</td>
+												<td>非公开</td>
+												<td><span class="btn btn-info btn-xs btn-course-edit">编辑</span>
+													<span class="btn btn-default btn-xs btn-course-view">详细</span>
+													<span class="btn btn-default btn-xs btn-course-del">删除</span>
+												</td>
+											</tr>
+											<tr>
+												<td style="border-left: 5px solid orange !important;">
+													<label class="checkbox"> <input type="checkbox"
+														class="invechk" name="checkbox-inline"> <i></i>
+												</label>
+												</td>
+												<td>2</td>
+												<td>WOW32</td>
+												<td>WOW32 XMAS intro-141218</td>
+												<td>周晓俊</td>
+												<td>2015.04.20</td>
+												<td>非公开</td>
+												<td><span class="btn btn-info btn-xs btn-course-edit">编辑</span>
+													<span class="btn btn-default btn-xs btn-course-view">详细</span>
+													<span class="btn btn-default btn-xs btn-course-del">删除</span>
+												</td>
+											</tr>
+											<tr>
+												<td style="border-left: 5px solid #ddd !important;"><label
+													class="checkbox"> <input type="checkbox"
+														class="invechk" name="checkbox-inline"> <i></i>
+												</label></td>
+												<td>2</td>
+												<td>WOW32</td>
+												<td>WOW32 XMAS intro-141218</td>
+												<td>周晓俊</td>
+												<td>2015.04.20</td>
+												<td>非公开</td>
+												<td><span class="btn btn-info btn-xs btn-course-edit">编辑</span>
+													<span class="btn btn-default btn-xs btn-course-view">详细</span>
+													<span class="btn btn-default btn-xs btn-course-del">删除</span>
+												</td>
+											</tr>
+
+										</tbody>
+										<tbody>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget div -->
+
+					</div>
+
+					<div class="row">
+						<div class="page col-sm-12 col-md-12 col-lg-12">
+							<div id="page-info" class="clearfix pull-right mt15">
+								<div class="pagination-info pull-left">
+									共 <span class="totalPages">0</span>页/ 共 <span
+										class="totalElements">0</span>条数据, 每页显示 <select
+										class="input-mini" id="select-user-size">
+										<option value="10">10</option>
+										<option value="20">20</option>
+										<option value="50">50</option>
+									</select>条
+								</div>
+								<ul class="pull-right pagination">
+									<li><a href="#" aria-label="Previous"> <span
+											aria-hidden="true">«</span>
+									</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#" aria-label="Next"> <span
+											aria-hidden="true">»</span>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+	<!-----start-copyright---->
+	<!-----//end-copyright---->
+</body>
+
+</html>
