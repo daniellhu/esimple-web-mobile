@@ -1,0 +1,11 @@
+.order-list{
+	padding:15px;
+	margin:10px;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+}
+.highlight {
+	padding: 9px 14px;
+	margin-bottom: 40px;
+	border-radius: 4px
+}

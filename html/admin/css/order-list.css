@@ -1,0 +1,30 @@
+.control-group {
+	padding: 18px 15px 0px 0px;
+}
+
+.order-detail-form {
+	background-color: #999
+}
+
+.header {
+	height: 50px;
+	background-color: red;
+}
+
+.header-option {
+	padding: 15px;
+}
+
+.order-center {
+	margin: 15px 0px;
+	width: 60px;
+	float: left
+}
+
+.icon-book {
+	color: red;
+}
+
+.order-list-title {
+	margin: 20px 0px 0px 0px;
+}
