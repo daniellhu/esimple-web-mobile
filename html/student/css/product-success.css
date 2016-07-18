@@ -1,0 +1,14 @@
+img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #FFEB3B;
+	margin:100px 0 0 0;
+}
+
+.product-detail .number {
+	padding: 20px 0 0 0;
+}
+
+.orange-span {
+	color: #FFEB3B;
+}

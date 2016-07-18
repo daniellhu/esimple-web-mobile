@@ -1,17 +1,16 @@
-body{
-	padding:0;
-	margin:0;
+body {
+	padding: 0;
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	background:#fff;
-	position:relative;
-
-	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+/* 	background: #f1f1f1; */
+	position: relative;
+	font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
 }
 
-body a{
-    transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
 }

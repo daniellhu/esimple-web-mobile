@@ -1,0 +1,46 @@
+.logo {
+	margin: 10px 0px 0px 0px;
+	float: left
+}
+
+.logo-size {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #FFEB3B;
+}
+
+.change-option {
+	margin: 20px 0px 0px 0px;
+	float: right
+}
+
+.choose-order {
+	margin: 20px 0px 20px 0px;
+}
+
+.choose-order btn {
+	float: left
+}
+
+.table th, .table td { 
+	text-align: center; 
+	height:38px;
+	
+}
+.product-list td, img {
+	/* border: 1px solid #FFEB3B; */
+	
+}
+
+.product-list img {
+	width: 60px;
+	height: 60px;
+}
+
+.text-center-name{
+	padding:15px 0 0 0;
+}
+
+.orange-span{
+	color:#FFEB3B;
+}
