@@ -2,59 +2,104 @@
 <html lang="zh-CN">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>订单详情</title>
-<!-- Bootstrap -->
-<link href="../../common/plugin/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
-<link href="../css/order-list.css" rel="stylesheet">
-<link href="../../common/css/style.css" rel="stylesheet">
-<link href="../../common/css/object.css" rel="stylesheet">
-<link href="../../common/css/font-awesome.min.css" rel="stylesheet">
-<link href="../css/oder-detail.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>订单详情</title>
+    <!-- Bootstrap -->
+    <link href="../../common/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/order-list.css" rel="stylesheet">
+    <link href="../../common/css/style.css" rel="stylesheet">
+    <link href="../../common/css/object.css" rel="stylesheet">
+    <link href="../../common/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/oder-detail.css" rel="stylesheet">
 </head>
 
 <body>
-	<div class="order-progress">
-		<ol class="progress-list clearfix">
-			<li class="step step-first step-done">
-				<div class="progress">
-					<span class="text">下单</span>
-				</div>
-				<div class="info">07月12日 10:16</div>
-			</li>
-			<li class="step step-done">
-				<div class="progress">
-					<span class="text">付款</span>
-				</div>
-				<div class="info">07月12日 11:16</div>
-			</li>
-			<li class="step step-done">
-				<div class="progress">
-					<span class="text">配货</span>
-				</div>
-				<div class="info">07月14日 11:18</div>
-			</li>
-			<li class="step step-done">
-				<div class="progress">
-					<span class="text">出库</span>
-				</div>
-				<div class="info">07月14日 17:23</div>
-			</li>
-			<li class="step step-active step-last">
-				<div class="progress">
-					<span class="text">交易成功</span>
-				</div>
-				<div class="info">07月17日 08:45</div>
-			</li>
-		</ol>
-	</div>
-
-	<div>
-		<span>用户信息</span>
-	</div>
+    <div class="order-progress">
+        <ol class="progress-list clearfix">
+            <li class="step step-first step-done">
+                <div class="progress complete">
+                    <span class="text"></span>
+                </div>
+                <div class="info">
+                    <i class="icon-file-alt"></i>提交订单
+                </div>
+            </li>
+            <li class="step step-done">
+                <div class="progress complete">
+                    <span class="text"></span>
+                </div>
+                <div class="info">
+                    <i class="icon-user-md"></i>成功派单
+                </div>
+            </li>
+            <li class="step step-done">
+                <div class="progress complete">
+                    <span class="text"></span>
+                </div>
+                <div class="info">
+                    <i class="icon-truck"></i>服务上门
+                </div>
+            </li>
+            <li class="step step-done">
+                <div class="progress">
+                    <span class="text"></span>
+                </div>
+                <div class="info">
+                    <i class="icon-ok"></i>服务完成
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div class="container h30 bgwh bge0">
+        <span class="f20">用户信息</span>
+    </div>
+    <div class="">
+        <div>
+            <ul class="order-list">
+                <li>
+                    <div class="order-detail">
+                        <table class="order-detail-table">
+                            <tbody>
+                                <tr>
+                                    <td class="w100 fa">订单状态</td>
+                                    <td class="w180 fv">订单受理中</td>
+                                    <td class="w100"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="w100 fa">订单编号</td>
+                                    <td class="w180 fv">00100039</td>
+                                    <td class="w100"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="w100 fa">服务内容</td>
+                                    <td class="w180 fv">油烟机不拆洗</td>
+                                    <td class="w100"> ×1</td>
+                                </tr>
+                                <tr>
+                                    <td class="w100 fa">联系电话</td>
+                                    <td class="w180 fv">15000813309</td>
+                                    <td class="w100"></td>
+                                </tr>
+                                <tr>
+                                    <td class="w100 fa">服务地址</td>
+                                    <td class="w180 fv">福泉路111号</td>
+                                    <td class="w100"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+     <footer> 
+        <div class="container ftboot">
+            <button>联想客服</button>
+            <button>取消订单</button>
+        </div>
+        </footer>
 </body>
 
 </html>
